@@ -63,3 +63,17 @@ footer p {
   padding-top: 2em;
   font-size: 0.8em;
 }
+
+.book2 {
+  display: none;
+  width: 100%;
+}
+
+@media only screen and (min-width: 48em) {
+  .book {
+    display: none;
+  }
+  .book2 {
+    display: block;
+  }
+}
