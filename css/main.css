@@ -72,6 +72,10 @@ footer p {
   width: 100%;
 }
 
+.shopify-buy-frame {
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 48em) {
 
   h1 {
