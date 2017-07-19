@@ -72,13 +72,6 @@ footer p {
   width: 100%;
 }
 
-.shopify-buy-frame {
-  margin: 0 auto;
-}
-
-.shopify-buy__btn {
-  margin: 0 auto;
-}
 
 @media only screen and (min-width: 48em) {
 
@@ -100,4 +93,8 @@ footer p {
     margin-top: 1em;
   }
 
+}
+
+.shopify-buy-frame {
+  margin: 0 auto;
 }
