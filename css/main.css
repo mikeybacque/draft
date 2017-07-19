@@ -44,24 +44,27 @@ main {
   width: 80%;
 }
 
-main p {
-  margin-top: 3em;
+.sentence {
+  margin-top: 1em;
   font-size: 1em;
   margin-bottom: 4em;
 }
 
 .link {
   font-size: 2em;
+  font-weight: bold;
   color: blue;
   text-decoration: none;
-  border: 3px solid blue;
-  border-radius: .5em;
+  border-bottom: 3px solid blue;
   padding: .5em;
 }
 
 footer p {
-  padding-top: 2em;
+  padding-top: 3em;
   font-size: 0.8em;
+  margin-top: 3em;
+  font-size: 1em;
+  margin-bottom: 4em;
 }
 
 .book2 {
@@ -70,10 +73,20 @@ footer p {
 }
 
 @media only screen and (min-width: 48em) {
+
+  h1 {
+    padding-top: .5em;
+    font-size: 3em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
   .book {
     display: none;
   }
   .book2 {
     display: block;
   }
+
+
 }
