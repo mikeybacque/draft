@@ -4,6 +4,11 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 html {
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
@@ -194,6 +199,7 @@ footer a{
 
   h1 {
     font-size: 6em;
+    padding: 0;
   }
 
   nav img {
@@ -229,11 +235,10 @@ footer a{
 
   .footer-bg {
     background-color: #ffdf92;
-    width: 200%;
+    width: 185%;
     position: absolute;
     bottom: 0;
     height: 70px;
-    left: -50%;
-
+    left: -45%;
   }
 }
