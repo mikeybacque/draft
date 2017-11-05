@@ -12,180 +12,356 @@
 </head>
 <body>
 
-<nav>
-  <img src="img/logo.svg" alt="Draft">
-</nav>
+<div class="section">
 
-<main>
+  <nav>
+    <img src="img/logo.svg" alt="Draft">
+  </nav>
 
-<h1>Keep your ideas in one place, preferably in your pocket at all times</h1>
+  <main>
 
-<img class="book" src="img/draft-mobile.png" alt="A Yellow Notebook">
-<img class="book2" src="img/draft.png" alt="A Yellow Notebook">
+  <h1>made by friends, <br>for friends</h1>
 
-<p class="sentence">Draft books are the solution to your cluttered creative output</p>
+  <img class="colour" src="img/colour.png">
 
-<div class="shopify">
-  <div id='product-component-fc553ff22ca'></div>
-  <script type="text/javascript">
-  /*<![CDATA[*/
+  <p>Yellow pocket notebooks designed and produced in Ottawa.</p>
 
-  (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) {
-      if (window.ShopifyBuy.UI) {
-        ShopifyBuyInit();
+  <div class="shopify">
+    <div id='product-component-fc553ff22ca'></div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
       } else {
         loadScript();
       }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'draftinternational.myshopify.com',
+          apiKey: '49ea0c1a5baeb22a312d44317f920e56',
+          appId: '6',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: [11224629140],
+            node: document.getElementById('product-component-fc553ff22ca'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
+      "product": {
+        "variantId": "all",
+        "width": "240px",
+        "contents": {
+          "img": false,
+          "imgWithCarousel": false,
+          "title": false,
+          "variantTitle": false,
+          "price": false,
+          "description": false,
+          "buttonWithQuantity": false,
+          "quantity": false
+        },
+        "text": {
+          "button": "GET SOME"
+        },
+        "styles": {
+          "product": {
+            "text-align": "left",
+            "@media (min-width: 601px)": {
+              "max-width": "100%",
+              //"margin-left": "0",
+              "margin-bottom": "50px"
+            }
+          },
+          "button": {
+            "background-color": "#0000ff",
+            ":hover": {
+              "background-color": "#0000ff"
+            },
+            ":focus": {
+              "background-color": "#0000ff"
+            }
+          },
+          "title": {
+            "font-size": "26px"
+          },
+          "price": {
+            "font-size": "18px"
+          },
+          "compareAt": {
+            "font-size": "15px"
+          }
+        }
+      },
+      "cart": {
+        "contents": {
+          "button": true
+        },
+        "styles": {
+          "button": {
+            "background-color": "#0000ff",
+            ":hover": {
+              "background-color": "#0000ff"
+            },
+            ":focus": {
+              "background-color": "#0000ff"
+            }
+          },
+          "footer": {
+            "background-color": "#ffffff"
+          }
+        }
+      },
+      "modalProduct": {
+        "contents": {
+          "img": false,
+          "imgWithCarousel": true,
+          "variantTitle": false,
+          "buttonWithQuantity": true,
+          "button": false,
+          "quantity": false
+        },
+        "styles": {
+          "product": {
+            "@media (min-width: 601px)": {
+              "max-width": "100%",
+              "margin-left": "0px",
+              "margin-bottom": "0px"
+            }
+          },
+          "button": {
+            "background-color": "#0000ff",
+            ":hover": {
+              "background-color": "#0000ff"
+            },
+            ":focus": {
+              "background-color": "#0000ff"
+            }
+          }
+        }
+      },
+      "toggle": {
+        "styles": {
+          "toggle": {
+            "background-color": "#0000ff",
+            ":hover": {
+              "background-color": "#0000ff"
+            },
+            ":focus": {
+              "background-color": "#0000ff"
+            }
+          }
+        }
+      },
+      "productSet": {
+        "styles": {
+          "products": {
+            "@media (min-width: 601px)": {
+              "margin-left": "-20px"
+            }
+          }
+        }
+      }
+    }
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
+  </div>
+</div>
+
+<div class="story">
+
+  <h2>OUR STORY</h2>
+
+  <p class="paragraph">The idea of Draft began when two friends started making notebooks together so they could keep their sketches with them at all times. They soon realized the books would be useful not only for their friends in the design community, but for anyone who needs a place to collect their ideas. From humble beginnings, Draft has grown to be the number one producer of yellow pocket notebooks in Ottawa.</p>
+
+<div class="button"</div>
+  <div id='product-component-ec913ff7dd3'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
     } else {
       loadScript();
     }
+  } else {
+    loadScript();
+  }
 
-    function loadScript() {
-      var script = document.createElement('script');
-      script.async = true;
-      script.src = scriptURL;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-      script.onload = ShopifyBuyInit;
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'draftyellow.myshopify.com',
+      apiKey: '2521604551dfed3a9539165e9a589ea7',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [10826627591],
+        node: document.getElementById('product-component-ec913ff7dd3'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "layout": "horizontal",
+    "variantId": "all",
+    "width": "100%",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "description": true,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "text-align": "left",
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#0b00ff",
+        ":hover": {
+          "background-color": "#1300ff"
+        },
+        ":focus": {
+          "background-color": "#1300ff"
+        }
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15px"
+      }
     }
-
-    function ShopifyBuyInit() {
-      var client = ShopifyBuy.buildClient({
-        domain: 'draftinternational.myshopify.com',
-        apiKey: '49ea0c1a5baeb22a312d44317f920e56',
-        appId: '6',
-      });
-
-      ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-          id: [11224629140],
-          node: document.getElementById('product-component-fc553ff22ca'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: {
-    "product": {
-      "variantId": "all",
-      "width": "240px",
-      "contents": {
-        "img": false,
-        "imgWithCarousel": false,
-        "title": false,
-        "variantTitle": false,
-        "price": false,
-        "description": false,
-        "buttonWithQuantity": false,
-        "quantity": false
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#0b00ff",
+        ":hover": {
+          "background-color": "#1300ff"
+        },
+        ":focus": {
+          "background-color": "#1300ff"
+        }
       },
-      "text": {
-        "button": "GET SOME"
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
       },
-      "styles": {
-        "product": {
-          "text-align": "center",
-          "@media (min-width: 601px)": {
-            "max-width": "100%",
-            //"margin-left": "0",
-            "margin-bottom": "50px"
-          }
+      "button": {
+        "background-color": "#0b00ff",
+        ":hover": {
+          "background-color": "#1300ff"
         },
-        "button": {
-          "background-color": "#0000ff",
-          ":hover": {
-            "background-color": "#0000ff"
-          },
-          ":focus": {
-            "background-color": "#0000ff"
-          }
-        },
-        "title": {
-          "font-size": "26px"
-        },
-        "price": {
-          "font-size": "18px"
-        },
-        "compareAt": {
-          "font-size": "15px"
+        ":focus": {
+          "background-color": "#1300ff"
         }
       }
-    },
-    "cart": {
-      "contents": {
-        "button": true
-      },
-      "styles": {
-        "button": {
-          "background-color": "#0000ff",
-          ":hover": {
-            "background-color": "#0000ff"
-          },
-          ":focus": {
-            "background-color": "#0000ff"
-          }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#0b00ff",
+        ":hover": {
+          "background-color": "#1300ff"
         },
-        "footer": {
-          "background-color": "#ffffff"
+        ":focus": {
+          "background-color": "#1300ff"
         }
-      }
-    },
-    "modalProduct": {
-      "contents": {
-        "img": false,
-        "imgWithCarousel": true,
-        "variantTitle": false,
-        "buttonWithQuantity": true,
-        "button": false,
-        "quantity": false
       },
-      "styles": {
-        "product": {
-          "@media (min-width: 601px)": {
-            "max-width": "100%",
-            "margin-left": "0px",
-            "margin-bottom": "0px"
-          }
-        },
-        "button": {
-          "background-color": "#0000ff",
-          ":hover": {
-            "background-color": "#0000ff"
-          },
-          ":focus": {
-            "background-color": "#0000ff"
-          }
+      "count": {
+        "color": "#ffffff",
+        ":hover": {
+          "color": "#ffffff"
         }
+      },
+      "iconPath": {
+        "fill": "#ffffff"
       }
-    },
-    "toggle": {
-      "styles": {
-        "toggle": {
-          "background-color": "#0000ff",
-          ":hover": {
-            "background-color": "#0000ff"
-          },
-          ":focus": {
-            "background-color": "#0000ff"
-          }
-        }
-      }
-    },
-    "productSet": {
-      "styles": {
-        "products": {
-          "@media (min-width: 601px)": {
-            "margin-left": "-20px"
-          }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
         }
       }
     }
   }
-        });
+}
       });
-    }
-  })();
-  /*]]>*/
-  </script>
+    });
+  }
+})();
+/*]]>*/
+</script>
+</div>
 </div>
 
+</div>
 <footer>
   <p>@draftbooks</p>
 </footer
