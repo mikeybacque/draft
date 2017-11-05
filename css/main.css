@@ -105,7 +105,7 @@ p {
 .paragraph {
   font-size: .9em;
   line-height: 2;
-  max-width: 33em;
+  max-width: 34em;
 }
 .button {
   margin-top: 3em;
@@ -166,7 +166,7 @@ footer a{
   h1 {
     padding-top: .5em;
     font-size: 4em;
-    max-width: 600px;
+    margin-bottom: 0;
   }
 
   .book {
@@ -191,6 +191,10 @@ footer a{
 }
 
 @media only screen and (min-width: 67.5em) {
+
+  h1 {
+    font-size: 6em;
+  }
 
   nav img {
     margin-left: 0em;
