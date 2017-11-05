@@ -7,6 +7,8 @@
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -194,8 +196,8 @@
 
   <p class="paragraph">The idea of Draft began when two friends started making notebooks so they could keep their sketches with them at all times. They soon realized the books would be useful not only for their friends in the design community, but for anyone who needs a place to collect their ideas. From humble beginnings, Draft has grown to be the number one producer of yellow pocket notebooks in Ottawa.</p>
 
-<div class="button"</div>
-  <div id='product-component-ec913ff7dd3'></div>
+<div class="button"></div>
+<div id='product-component-ede2aebab12'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
@@ -228,11 +230,12 @@
 
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: [10826627591],
-        node: document.getElementById('product-component-ec913ff7dd3'),
+        id: [41023799303],
+        node: document.getElementById('product-component-ede2aebab12'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
+    "buttonDestination": "checkout",
     "layout": "horizontal",
     "variantId": "all",
     "width": "100%",
@@ -244,6 +247,9 @@
       "buttonWithQuantity": false,
       "quantity": false
     },
+    "text": {
+      "button": "GET SOME"
+    },
     "styles": {
       "product": {
         "text-align": "left",
@@ -254,24 +260,55 @@
         }
       },
       "button": {
-        "background-color": "#0b00ff",
+        "background-color": "#1747ff",
+        "font-family": "Montserrat, sans-serif",
+        "padding-left": "40px",
+        "padding-right": "40px",
         ":hover": {
-          "background-color": "#1300ff"
+          "background-color": "#1540e6"
         },
+        "border-radius": "8px",
         ":focus": {
-          "background-color": "#1300ff"
-        }
+          "background-color": "#1540e6"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-family": "Montserrat, sans-serif",
+        "color": "#000000",
+        "font-weight": "normal"
       },
       "title": {
-        "font-size": "26px"
+        "font-family": "Montserrat, sans-serif",
+        "font-size": "26px",
+        "color": "#000000"
+      },
+      "description": {
+        "color": "#000000",
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "normal"
       },
       "price": {
-        "font-size": "18px"
+        "font-family": "Montserrat, sans-serif",
+        "font-size": "18px",
+        "color": "#000000",
+        "font-weight": "normal"
       },
       "compareAt": {
-        "font-size": "15px"
+        "font-size": "15px",
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "normal",
+        "color": "#000000"
       }
-    }
+    },
+    "googleFonts": [
+      "Montserrat",
+      "Montserrat",
+      "Montserrat",
+      "Montserrat",
+      "Montserrat",
+      "Montserrat"
+    ]
   },
   "cart": {
     "contents": {
@@ -279,18 +316,24 @@
     },
     "styles": {
       "button": {
-        "background-color": "#0b00ff",
+        "background-color": "#1747ff",
+        "font-family": "Montserrat, sans-serif",
         ":hover": {
-          "background-color": "#1300ff"
+          "background-color": "#1540e6"
         },
+        "border-radius": "8px",
         ":focus": {
-          "background-color": "#1300ff"
-        }
+          "background-color": "#1540e6"
+        },
+        "font-weight": "bold"
       },
       "footer": {
         "background-color": "#ffffff"
       }
-    }
+    },
+    "googleFonts": [
+      "Montserrat"
+    ]
   },
   "modalProduct": {
     "contents": {
@@ -310,37 +353,89 @@
         }
       },
       "button": {
-        "background-color": "#0b00ff",
+        "background-color": "#1747ff",
+        "font-family": "Montserrat, sans-serif",
+        "padding-left": "40px",
+        "padding-right": "40px",
         ":hover": {
-          "background-color": "#1300ff"
+          "background-color": "#1540e6"
         },
+        "border-radius": "8px",
         ":focus": {
-          "background-color": "#1300ff"
-        }
+          "background-color": "#1540e6"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Montserrat, sans-serif"
+      },
+      "description": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "normal"
+      },
+      "compareAt": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "normal"
       }
-    }
+    },
+    "googleFonts": [
+      "Montserrat",
+      "Montserrat",
+      "Montserrat",
+      "Montserrat",
+      "Montserrat",
+      "Montserrat"
+    ]
   },
   "toggle": {
     "styles": {
       "toggle": {
-        "background-color": "#0b00ff",
+        "font-family": "Montserrat, sans-serif",
+        "background-color": "#1747ff",
         ":hover": {
-          "background-color": "#1300ff"
+          "background-color": "#1540e6"
         },
         ":focus": {
-          "background-color": "#1300ff"
-        }
+          "background-color": "#1540e6"
+        },
+        "font-weight": "bold"
       },
       "count": {
         "color": "#ffffff",
         ":hover": {
           "color": "#ffffff"
-        }
+        },
+        "font-size": "16px"
       },
       "iconPath": {
         "fill": "#ffffff"
       }
-    }
+    },
+    "googleFonts": [
+      "Montserrat"
+    ]
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Montserrat, sans-serif"
+      },
+      "select": {
+        "font-family": "Montserrat, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Montserrat",
+      "Montserrat"
+    ]
   },
   "productSet": {
     "styles": {
