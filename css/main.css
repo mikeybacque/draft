@@ -99,6 +99,7 @@ p {
 
 .story {
   margin: 2em;
+  margin-bottom: 4em;
 }
 
 .paragraph {
@@ -126,7 +127,6 @@ footer {
 
 footer a{
   position: absolute;
-  font-weight: bold;
   top: 50%;
   transform: translateY(-50%);
   font-size: 0.8em;
@@ -141,6 +141,7 @@ footer a{
 .insta2 {
   right: 2em;
 }
+
 
 @media only screen and (min-width: 48em) {
 
@@ -158,11 +159,14 @@ footer a{
     margin: 4em;
   }
 
+  .section {
+    margin: auto;
+  }
+
   h1 {
     padding-top: .5em;
-    font-size: 6em;
-    max-width: 900px;
-    margin: 0 auto;
+    font-size: 4em;
+    max-width: 600px;
   }
 
   .book {
@@ -176,4 +180,56 @@ footer a{
     margin-top: 1em;
   }
 
+  footer {
+    padding-left: 4em;
+  }
+
+  .insta2 {
+    right: 4em;
+  }
+
+}
+
+@media only screen and (min-width: 67.5em) {
+
+  nav img {
+    margin-left: 0em;
+  }
+
+  nav {
+    max-width: 59em;
+    margin: 0 auto;
+  }
+
+  footer {
+    max-width: 59em;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  main {
+    max-width: 59em;
+    margin: 0 auto;
+  }
+
+  .story {
+    max-width: 59em;
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+
+  .insta2 {
+    right: 0em;
+  }
+
+  .footer-bg {
+    background-color: #ffdf92;
+    width: 200%;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    left: -50%;
+
+  }
 }
