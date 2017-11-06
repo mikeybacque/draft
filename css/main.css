@@ -36,7 +36,7 @@ nav img {
 }
 
 .section {
-  background-color: #ffdf92;
+  background-color: #ffdc82;
   height: 100vh;
 }
 
@@ -135,7 +135,7 @@ p {
 
 footer {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffdf92;
+  background-color: #ffdc82;
   height: 70px;
   position: relative;
   padding: 2em;
@@ -245,7 +245,7 @@ footer a{
   }
 
   .footer-bg {
-    background-color: #ffdf92;
+    background-color: #ffdc82;
     width: 185%;
     position: absolute;
     bottom: 0;
